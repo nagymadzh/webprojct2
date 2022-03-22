@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Автомабили в наличии</title>
+    <style>
+       
+        
+        .header{
+            height: 15px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            font-size: 200px;
+            margin-top:  50px;
+            
+        }
+        h1{  color: black;
+            font: 18px BMWTypeNextTT;
+            text-align: center;
+            display: block;
+            margin-left: 650px;
+        }
+        .carousel-item{
+            width: 1520px;
+        }
+    
+        
+        #lg{
+            background-color: #ebebeb;
+            padding-top: 70px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+        #lg h4{
+            font-size: 45px;
+
+        }
+        #r{
+            background-color: rgb(89, 152, 247);
+            padding-top: 70px;
+            padding-bottom: 70px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+        }
+        #r h4{
+            color: rgba(247, 243, 243, 0.904);
+            font-size: px;
+           
+            text-align: center;
+             
+        }
+        
+        #r p{
+            color: white;
+            
+            text-align: center;
+        }
+        #f{
+            background-color: rgb(88, 88, 88);
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+        }
+        #f i{
+            color: rgb(245, 32, 4);
+            font-size: 30px;
+            padding: 20px;
+        }
+        #f {
+            color: rgb(22, 6, 250);
+        }
+       
+        .col-lg-2{
+            margin: 70px;
+        }
+       th{
+         text-align: center;
+       }
+       .card1{
+            display: inline-block;
+            width: 400px;
+        }
+        .card2{
+            display: inline-block;
+            width: 400px;
+        }
+        .card3{
+            display: inline-block;
+            width: 400px;
+        }
+        .card4{
+            display: inline-block;
+            width: 400px;
+        }
+        .card5{
+            display: inline-block;
+            width: 400px;
+        }
+        .card6{
+            display: inline-block;
+            width: 400px;
+        }
+        .card7{
+            display: inline-block;
+            width: 400px;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="logo.jpg" width="150" height="100" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Авто в наличии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comanda.html">Спецпредложения</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">ВСЕ</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#:~:text=BMW%20%D0%B2%20%D0%9C%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B5-,%D0%92%D1%81%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%3A,-BMW%20X1">Все</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#:~:text=BMW%20%D0%B2%20%D0%9C%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B5-,%D0%92%D1%81%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%3A,-BMW%20X1">НОВЫЕ АВТОМОБИЛИ</a></li>
+                </ul>
+              </div>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Я хочу купить...">
+              <button class="btn btn-primary" type="button">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+            <div class="header">
+            <h1>
+            Вас приветствует
+            <br>
+            <b>BMW Group Kazakhstan</b>
+            </h1>
+            </div>
+            <br>
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+        
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="family12.png" alt="family12" class="d-block" style="width:100%">
+                  <div class="carousel-caption">
+                    <h3>Добро пожаловать в семью BMW</h3>
+                    <p>Замена масла и помощь на дорогах в подарок для новых владельцев BMW с пробегом.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="peoplesbmw.png" alt="bmw7" class="d-block" style="width:100%">
+                  <div class="carousel-caption">
+                    <h3>Выберите свою бизнес модель  </h3>
+                    <p>Лизинг на ваших условиях для физических и индивидуальных предпринимателей.</p>
+                  </div> 
+                </div>
+                <div class="carousel-item">
+                  <img src="bmw5.png" alt="bmw5" class="d-block" style="width:100%">
+                  <div class="carousel-caption">
+                    <h3>Новый BMW 5 серии</h3>
+                    <p>Только на официальных сайтах BMW</p>
+                  </div>  
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <br>
+            <br>
+            <br>
+
+        <div class="container mt-3">
+            <h2>Обменяйте свой автомобиль на новый BMW выгодно!</h2>
+            <p>Программа Trade-in – это уникальная возможность передать свой автомобиль в счет стоимости нового автомобиля BMW.</p>            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>1 Шаг</th>
+                  <th>2 Шаг</th>
+                  <th>3 Шаг</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Вы просто сдаете нам Ваш существующий автомобиль.</td>
+                  <td>При необходимости доплачиваете разницу в цене</td>
+                  <td>Уезжаете на новом или на автомобиле с пробегом.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!--Project-3-->
+          <div class="container mt-3">
+            <h2>You can choose the date of the order yourself</h2>
+            <form action="/action_page.php">
+              <label for="data">DATA:</label>
+              <input type="date" min="2021-12-03">
+              <input type="submit" value="Submit">   <!--DATA-->
+            </form>
+            </div>
+            <br>
+            <div style="text-align: center;">
+              <h1>Choose a car:</h1>
+              
+              <select>
+                <option value="bmw">BMW</option>
+                <option value="dmw">Kadilak</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option> 
+              </select>
+            </div>
+            <script src="script.js"></script>
+
+            
+          
+          <br>
+          <br>
+          <br>
+          <div class="container mt-3">
+            <audio controls>
+              <source src="music.ogg" type="audio/ogg">
+              <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <br>
+          <video width="1300" height="800" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+          </div>
+
+          
+          
+
+          <div class="container mt-3">
+            <h2>Официальный дилер BMW в Магнитогорске</h2>
+            <p>Все модели:</p>
+            
+            <div class="card1" style="width:400px">
+              <img class="card-img-top" src="bmwX.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">BMW X1</h4>
+                <p class="card-text">от 17.928.921тг</p>
+                <a href="stock.html" class="btn btn-primary">В наличии</a>
+              </div>
+            </div>
+            
+                <div class="card2" style="width:400px">
+                  <img class="card-img-top" src="bmw2X.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">BMW X2</h4>
+                    <p class="card-text">от 17.988.981тг</p>
+                    <a href="nevozmozno.html" class="btn btn-primary">В наличии 1 авто</a>
+                  </div>
+                </div>
+    
+                <div class="card3" style="width:400px">
+                    <img class="card-img-top" src="bmwX3.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">BMW X3</h4>
+                      <p class="card-text">от 23.108.281тг</p>
+                      <a href="#" class="btn btn-primary">В наличии 1 авто</a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card4" style="width:400px">
+                    <img class="card-img-top" src="bmwX4.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">BMW X4</h4>
+                      <p class="card-text">от 25.388.281тг</p>
+                      <a href="#" class="btn btn-primary">В наличии 4 авто</a>
+                    </div>
+                  </div>
+    
+                  <div class="card5" style="width:400px">
+                    <img class="card-img-top" src="bmwX5.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">BMW X5</h4>
+                      <p class="card-text">от 27.358.881тг</p>
+                      <a href="#" class="btn btn-primary">В наличии 9 авто</a>
+                    </div>
+                  </div>
+                  <div class="card6" style="width:400px">
+                    <img class="card-img-top" src="bmwX6.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">BMW X6</h4>
+                      <p class="card-text">от 29.988.981тг</p>
+                      <a href="#" class="btn btn-primary">В наличии 5 авто</a>
+                    </div>
+                  </div>
+                  <div class="card7" style="width:400px">
+                    <img class="card-img-top" src="bmwX7.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">BMW X7</h4>
+                      <p class="card-text">от 32.488.981тг</p>
+                      <a href="#" class="btn btn-primary">В наличии 5 авто</a>
+                    </div>
+                  </div>
+                  
+    
+          
+
+                 <div id="lg">
+                     <div class="container">
+                         <div class="row centered">
+                             <h4>Нам доверяют</h4>
+                        
+                             <div class="col-lg-2 col-lg-offset-1">
+                                 <img src="tayoto.png" alt="">
+                             </div>
+                             <div class="col-lg-2">
+                                <img src="xabar.png" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="mers.png" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="lexus.png" alt="">
+                            </div>
+                         
+                         <div id="r">
+                             <div class="container">
+                                 <div class="row centered">
+                                     <div class="container mt-3">
+                                         <h4>Контакты</h4>
+                                         <b>«Прайм Авто»</b>
+                                           <p>Официальный дилер BMW</p>
+                                         <p>© 2020 Официальный дилер Toyota на территории Республики Казахстан</p>
+
+                                     </div>
+
+                                 </div>
+
+                             </div>
+
+                         </div>  
+                         <div id="f">
+                            <div class="container">
+                                <div class="row centered">
+                                    <a href="#"><i class="fa1 fa-twitter"><img src="Twitter.jpg" width="40" height="30"></i></a>
+                                    <a href="#"><i class="fa2 fa-facebook"><img src="facebook.png" width="40" height="30"></i></a>
+                                    <a href="#"><i class="fa3 fa-instagram"><img src="insta.png" width="40" height="30"></i></a>
+
+                            </div> 
+                            </div>
+                            </div>
+
+
+                         </div>
+
+                     </div>
+
+                    </div>
+        
+
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJsInstance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+</head>
+<style>
+    
+</style>
+<body>
+    <div id="app">
+        <h1 v-bind:title="menu">{{title}}</h1>
+        <p v-text="content"></p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+
+            data: {
+                title: 'You have already placed an order',
+                content: 'It is carried out only after receiving your order.',
+                menu: 'Not enough funds!'
+            }
+        });
+    </script>
+</body>
+</html>
